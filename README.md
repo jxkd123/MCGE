@@ -57,4 +57,9 @@ PGE推导过程
 
 ![image](https://user-images.githubusercontent.com/33678772/169677935-14aefa7c-a205-4f35-b280-8a9e6fc1cea1.png)
 
+其中 。从推导中可以看出，分布中的参数被 push 到了代价函数中，从而可以将求导和积分操作进行对换。
+
+分布变换是统计学中一个基本的操作，在计算机中实际产生各种常见分布的随机数时，都是基于均匀分布的变换来完成的。有一些常见的分布变换可参见下表：
+
+![image](https://user-images.githubusercontent.com/33678772/169677996-5c466f4a-678d-405e-adab-4a83336d7c34.png)
 
