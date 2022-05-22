@@ -23,4 +23,12 @@ https://www.sohu.com/a/339765442_500659
 
 ![image](https://user-images.githubusercontent.com/33678772/169677549-a4458506-9d3e-4037-b1e9-685aef39410d.png)
 
+SFGE的推导过程
+
+![image](https://user-images.githubusercontent.com/33678772/169677682-d23a00ad-95c0-4311-be2e-f650ed9754c2.png)
+
+利用 MC 采样可以估计出梯度，如下：
+
+![image](https://user-images.githubusercontent.com/33678772/169677688-509fd184-3465-40d7-a17a-7cb000f9f886.png)
+
 
