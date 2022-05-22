@@ -35,4 +35,26 @@ SFGE的推导过程
 
 ![image](https://user-images.githubusercontent.com/33678772/169677688-509fd184-3465-40d7-a17a-7cb000f9f886.png)
 
+Pathwise Gradient Estimator (PGE)
+
+PGE 的思路是将待学习的参数从分布中变换到代价函数中，核心是做分布变换（即所谓的 reparameterization ，重参数化），
+
+计算原来分布下的期望梯度时，由于变换后的分布不包含求导参数，可将求导和积分操作进行对换，从而基于 MC 对梯度进行估计。
+
+PGE 的一个重要理论依据是 Law of the Unconscious Statistician (LOTUS) ，即：
+
+![image](https://user-images.githubusercontent.com/33678772/169677916-bf51147c-7cd6-432a-a913-f03a2b2528d7.png)
+
+![image](https://user-images.githubusercontent.com/33678772/169677918-0c66b46f-945f-4e99-993c-c5ea37a4a26c.png)
+
+从定理中可以看到，计算一个函数的期望，可以不知道其分布，只需要知道一个简单分布，以及从简单分布到当前分布的映射关系即可。
+
+PGE推导过程
+
+基于 Law of the Unconscious Statistician (LOTUS) 对 PGE 进行推导，如下：
+
+![image](https://user-images.githubusercontent.com/33678772/169677931-7bc4e28a-919f-4885-814f-ead24257cfad.png)
+
+![image](https://user-images.githubusercontent.com/33678772/169677935-14aefa7c-a205-4f35-b280-8a9e6fc1cea1.png)
+
 
